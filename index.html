@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section class="todo">
+        <h2>To-Do List</h2>
+        <div class="input">
+            <input type="text" class="inputfield" id="todoinput" placeholder="Teammate Name"/>
+            <button class="btn">Add</button>
+        </div>
+
+        <div class="task-row">
+            <select class="dropdown">
+                <option value="Arnavi">Arnavi</option>
+                <option value="Laura">Laura</option>
+                <option value="Leo">Leo</option>
+            </select>
+            <input type="text" class="task-input" placeholder="Task"/>
+            <input type="date" class="date-input"/>
+            <button class="assign-btn">Assign</button>
+        </div>
+
+        <!-- Student Section for Arnavi -->
+        <div class="student-section">
+            <div class="student-name">
+                <h3>Arnavi</h3>
+            </div>
+            <div class="student-tasks">
+                <ul class="student-tasks-list">
+                    <li>
+                        <label for="task1">Set up flash server</label>
+                        <span class="duedate">Due: 2099-10-01</span>
+                        <input type="checkbox" id="task1"/>
+                    </li>
+                    <li>
+                        <label for="task2">Set up Git repo</label>
+                        <span class="duedate">Due: 2099-10-01</span>
+                        <input type="checkbox" id="task2"/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="student-section">
+            <div class="student-name">
+                <h3>Laura</h3>
+            </div>
+            <div class="student-tasks">
+                <ul class="student-tasks-list">
+                    <li>
+                        <label for="task3">Draft weekly plan</label>
+                        <span class="duedate">Due: 2099-09-28</span>
+                        <input type="checkbox" id="task3"/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="student-section">
+            <div class="student-name">
+                <h3>Leo</h3>
+            </div>
+            <div class="student-tasks">
+                <ul class="student-tasks-list">
+                    <li>
+                        <label for="task4">Survey existing apps</label>
+                        <span class="duedate">Due: 2099-09-28</span>
+                        <input type="checkbox" id="task4"/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <ul class="scroll" id="todoList"></ul>
+        <div>
+            <hr class="counter" />
+            <div class="counter-container">
+                <button id="Clearbutton">Clear completed</button>
+                <button id="Resetbutton">Reset</button>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+</body>
+</html>
